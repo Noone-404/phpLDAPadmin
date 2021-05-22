@@ -173,6 +173,10 @@ $config->custom->commands['script'] = array(
 // $config->custom->appearance['tree_width'] = null;
 #  $config->custom->appearance['tree_width'] = 250;
 
+/* Number of tree command icons to show, 0 = show all icons on 1 row. */
+// $config->custom->appearance['tree_icons'] = 0;
+#  $config->custom->appearance['tree_icons'] = 4;
+
 /* Confirm create and update operations, allowing you to review the changes
    and optionally skip attributes during the create/update operation. */
 // $config->custom->confirm['create'] = true;
@@ -242,7 +246,6 @@ $config->custom->appearance['friendly_attrs'] = array(
 
 /* Attribute that is added to the group member attribute. */
 // $config->custom->modify_member['attr'] = 'dn';
-
 
 /* For Posix attributes */
 // $config->custom->modify_member['posixattr'] = 'uid';

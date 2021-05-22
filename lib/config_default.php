@@ -8,7 +8,7 @@
  */
 
 /** The minimum version of PHP required to run phpLDAPadmin. */
-define('REQUIRED_PHP_VERSION','5.0.0');
+define('REQUIRED_PHP_VERSION','5.5.0');
 
 /**
  * The config class contains all our configuration settings for a session.
@@ -260,6 +260,10 @@ class Config {
 		$this->default->appearance['tree_filter'] = array(
 			'desc'=>'LDAP search filter for the tree entries',
 			'default'=>'(objectClass=*)');
+
+		$this->default->appearance['tree_icons'] = array(
+			'desc'=>'Number of Tree Icons to display on a row',
+			'default'=>0);
 
 		# PLA will not display the header and footer parts in minimal mode.
 		$this->default->appearance['minimalMode'] = array(
